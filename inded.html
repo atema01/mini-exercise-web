@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exersice Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+            <!-- this is the main container -->
+    <div class="container">
+        <div class="title">
+            <p>Exersice Tracker</p>
+        </div>
+        <div class="exersice-tracker">
+            <!-- drop down to select day of the week to perform exercise -->
+            <form >
+                <label>Choose Day</label><br/>
+            <select >
+                <option  class="insert value" value="novalue">none</option>
+
+                <option  class="day1" value="day1">Day 1</option>
+                <option class="day2" value="day2">Day 2</option>
+                <option class="day3" value="day3">Day 3</option>
+                <option class="day4" value="day4">Day 4</option>
+                <option class="day5" value="day5">Day 5</option>
+                <option class="day6" value="day6">Day 6</option>
+                <option class="day7" value="day7">Day 7</option>
+            </select>
+        </form>
+            <!-- image on the home page -->
+        <div class="bg-image"><img src="images/bg image.png" alt=""></div>
+            <!-- navigation options on the pre exercise page  -->
+        <div class="ex-nav">
+            
+            <div onclick="home()">Home</div>
+            <h3>Exercices List</h3>
+            <div onclick="start()">Start</div>
+        </div>
+        </div>
+            <!-- list of exercis of the selected day -->
+        <div class="exercices">
+
+          <ul class="ex-day">
+          </ul>
+        </div>      
+            <!-- content of the main exercise page -->
+        <div class="main-page">
+            <button class="back" onclick="back()">back</button>
+            <img src="">
+            <h2></h2>
+            <div class="count-down">
+            <p class="time" >60</p>
+           </div>
+        </div>
+            <!-- controls under main exercise elements -->
+        <div class="navigation">
+            <button class="prev" ><p>previous</p></button>
+            <button class="skip" ><p>skip</p></button>
+            <button class="next" ><p>next</p></button>
+        </div>
+            <!-- count the number of sets  -->
+        <h3 class="set">1/4 sets </h3>
+            <!-- controls for the timer  -->
+        <div class="start" onclick="startCount()" > continue </div>
+        <div class="stop" onclick="stopCount()"> stop </div>
+    </div>
+    <audio  >
+        <source src="images/song.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

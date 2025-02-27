@@ -1,0 +1,268 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+        font-family:sans-serif;
+    
+}
+body{
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+/* the container of the contents */
+.container{
+    margin:20px auto;
+    padding:10px;
+    width:90%;
+    height:1000px;
+    max-width:400px;
+    max-height: 500px;
+    background: linear-gradient(rgb(20, 20, 20) , rgb(213, 240, 242) );
+text-align: center;
+border-radius: 20px;
+color:#fff;
+}
+/* the header on the top */
+.title {
+margin-top: 20px;
+font-size: 40px;
+max-width:400px;
+border-radius:10px;
+margin:30px auto 10px;
+display:block;
+
+}
+/* the drop down list */
+form{
+    display:block;
+}
+select{
+padding:10px;
+margin : 10px auto 0;
+outline:0;
+border:0;
+border-radius: 5px;
+color:white;
+background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(0,0,0,0.5));
+cursor: pointer;
+
+
+}    
+option {
+    background-color: rgba(57, 66, 66,0.5);
+}
+/* image on the home page */
+.bg-image{
+    display:block;
+}
+.bg-image img{
+    max-width:400px;
+    width:100%;
+    margin:50px auto 0;
+}
+/* navigation on the pre exercise page */
+.ex-nav{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+.ex-nav div{
+    margin:0 15px;
+    background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(0,0,0,0.5));
+    padding:5px 20px;
+    border-radius: 5px;
+    max-width: 100px;
+    cursor:pointer;
+}
+.ex-nav div:hover,select:hover{
+    background: linear-gradient(rgb(20, 20, 20) , rgb(213, 240, 242) );
+
+}
+/* style of the pre exercis page */
+.exercices{
+    display: none;
+    margin:10px auto 0;
+    height:280px;
+    max-width:450px;
+    width:100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+
+}
+
+.exercices::-webkit-scrollbar{
+    width:0;
+    height: 0;
+}
+/* list of the exercises */
+
+ul li{
+    display:flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding:10px;
+    max-width:400px;
+    width:100%;
+    margin: 10px auto;
+    cursor:default;
+    border-radius: 5px;
+    background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(0,0,0,0.5));
+}
+ul img{
+    width:50px;
+    border-radius: 50%;
+    cursor:default;
+}
+ul img:hover{
+    opacity:0.4;
+}
+ul p{
+margin: auto;
+}
+/* the main exercise page contents */
+.main-page{
+    display:none;
+    width:250px;
+    height:250px;
+    margin:50px auto 0px;
+}
+.main-page img{
+    margin:auto;
+}
+/* from main exercise to pre exercise page nav buttons */
+.back{
+    position: relative;
+   top:-30px;
+   left:-130px;
+    margin:0 15px;
+    background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(105, 103, 103, 0.5));
+    padding:5px 20px;
+    border-radius: 5px;
+    cursor:pointer;
+    outline:0;
+    border:0;
+}
+.main-page img{
+    border-radius: 50%;
+    width:200px;
+    padding:-20pxpx;
+    border:3px solid white;
+    box-shadow: 0px 0px 50px grey;
+
+}
+.main-page h2{
+  margin-top:-10PX;
+  margin:10px auto 0px;
+
+}
+/* count down on the rest time */
+.count-down{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    background:black;
+    opacity:0; 
+    margin:-237.68px auto 0;
+    text-align: center;
+}
+/* the number on the countdown  */
+.count-down p{
+    font-size: 100px;
+    padding:30px 0;
+    font-weight: 900;
+}
+/* navigation icons on the main exercise page */
+.navigation{
+    padding:10px 0px ;
+    font-size:20px;
+    font-weight: 500 ;
+    display:none;
+    justify-content: space-around;
+    margin:30px auto 0;
+}
+
+.prev,.next{
+    color:white;
+    cursor:pointer;
+    background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(0,0,0,0.5));
+    max-width:100px;
+    width:100%;
+    padding:6px;
+    border:0;
+    outline:0;
+    border-radius: 10px;
+}
+.skip{
+    color:white;
+    cursor:pointer;
+    background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(0,0,0,0.5));
+    max-width:100px;
+    width:100%;
+    padding:6px;
+    border:0;
+    outline:0;
+    border-radius: 10px;
+    display:none;
+
+}
+.start{
+    color:white;
+    cursor:pointer;
+    max-width:100px;
+    width:100%;
+    margin: 10px auto ;
+    padding:6px;
+    border:0;
+    outline:0;
+    border-radius: 10px;
+    background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(0,0,0,0.5));
+    display: none;
+
+}
+.stop{
+    color:white;
+    cursor:pointer;
+    max-width:100px;
+    width:100%;
+    margin: 10px auto ;
+    padding:6px;
+    border:0;
+    outline:0;
+    border-radius: 10px;
+    background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(0,0,0,0.5));
+    display: none;
+    
+    
+    }
+.prev:hover,.next:hover,.start:hover,.stop:hover,.skip:hover,.back:hover{
+    background: linear-gradient(rgb(20, 20, 20) , rgb(213, 240, 242) );
+}
+.set{
+    display:none;
+}
+/* style for different screen type */
+@media (max-width:550px){
+    .title{
+        font-size:30px ;
+    }
+    .exercices{
+        font-size: 20px;
+
+    }
+    }
+    @media(max-width:420px){
+        .exercices{
+            font-size: 17px;
+
+        }
+    }
+    @media(max-width:370px){
+        .exercices{
+            font-size: 13px;
+        
+        }
+    }
+
